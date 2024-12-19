@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczne Życzenia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #2ecc71, #e74c3c);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            color: #f1c40f;
+            padding: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .wishes {
+            margin: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo {
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #f1c40f;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .decorations span {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #f1c40f;
+            border-radius: 50%;
+            animation: float 6s linear infinite;
+            opacity: 0.8;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                font-size: 2em;
+            }
+
+            .wishes {
+                font-size: 1.2em;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Wesołych Świąt!</header>
+    <div class="decorations">
+        <span style="top: 10%; left: 20%; animation-delay: 0s;"></span>
+        <span style="top: 30%; left: 50%; animation-delay: 2s;"></span>
+        <span style="top: 50%; left: 80%; animation-delay: 4s;"></span>
+        <span style="top: 70%; left: 30%; animation-delay: 6s;"></span>
+        <span style="top: 80%; left: 60%; animation-delay: 1s;"></span>
+    </div>
+    <div class="container">
+        <div class="wishes">
+            <p>Z okazji Świąt Bożego Narodzenia chciałbym złożyć Pani najserdeczniejsze życzenia. Życzę Pani spokoju ducha, rodzinnego ciepła i zdrowia na każdy dzień. Niech te Święta będą chwilą wytchnienia, w której odnajdzie Pani radość podobną do tej, którą opisywał Adam Mickiewicz w „Panu Tadeuszu” — czas harmonii, wspólnoty i bliskości, gdy „wspólne życie w zgodzie” było najwyższym dobrem.
+
+</p>
+        </div>
+        <div class="photo">
+            <img src="" alt="">
+        </div>
+    </div>
+    <footer>Życzę wszystkiego najlepszego! ❤️</footer>
+</body>
+</html>
